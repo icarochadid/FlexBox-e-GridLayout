@@ -16,8 +16,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px;
     }
 .menu{
     display: flex;
@@ -27,5 +27,31 @@ header {
     display: block;
     padding: 10px; 
     margin: 8px;
-   
+   background-color: blue;
+}
+h1 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.flex{
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 800px;
+}
+.flex > div {
+    flex: 1 1 200px;
+    margin: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
